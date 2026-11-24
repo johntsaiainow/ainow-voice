@@ -4,7 +4,7 @@
 
 Open-source PCB hardware repository for **AiNow Voice S3** — a family of ESP32-S3 based dual-microphone AI voice assistant cards.
 
-> **Note:** This hardware is no longer tied to the "XiaoZhi" (小智) firmware. It is a general-purpose ESP32-S3 voice platform compatible with any ESP-SR / ESP-ADF / custom voice pipeline.
+> **Note:** This hardware is no longer tied to the "XiaoZhi" firmware. It is a general-purpose ESP32-S3 voice platform compatible with any ESP-SR / ESP-ADF / custom voice pipeline.
 
 ---
 
@@ -16,15 +16,15 @@ Open-source PCB hardware repository for **AiNow Voice S3** — a family of ESP32
 | AiNow Voice S3 — Mini | ESP32-S3-WROOM-1-N8R8 | 2× I2S MEMS | None (LED status only) | MAX98357A | Planned | [`s3-dualmic-mini`](./s3-dualmic-mini) |
 | AiNow Voice S3 — Pro | ESP32-S3-WROOM-1-N16R8 | ES7210 4-ch ADC + Analog MEMS | ST7789 + OLED | NS4168 + passive filter | In design | [`s3-dualmic-pro`](./s3-dualmic-pro) |
 
-> 各子目錄內含獨立 `README.md`、KiCad 原理圖/PCB 檔、Gerber 與 3D 模型說明。
+> Each sub-folder contains its own `README.md`, KiCad schematic/PCB files, Gerber output, and 3D model notes.
 
 ---
 
 ## 🚀 Quick Start
 
-1. 進入想要建構的子目錄（例如 `s3-dualmic-standard/`）閱讀其 `README.md`。
-2. 使用 **KiCad 10** 開啟 `.kicad_pro` 檔案即可檢視原理圖與 PCB 3D 模型。
-3. 依子目錄說明匯出 Gerber 後即可送板廠打樣。
+1. Enter the variation folder you want to build (e.g. `s3-dualmic-standard/`) and read its `README.md`.
+2. Open the `.kicad_pro` file with **KiCad 10** to view the schematic and PCB 3D model.
+3. Export Gerber per the sub-folder instructions and send to the board house.
 
 ---
 

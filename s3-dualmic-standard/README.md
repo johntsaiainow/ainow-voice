@@ -1,29 +1,29 @@
 # AiNow Voice S3 — Standard
 
-ESP32-S3 雙麥克風 AI 語音卡片（標準版）
+ESP32-S3 dual-microphone AI voice card — Standard Edition
 
 ---
 
-## 概述
+## Overview
 
-標準版是 AiNow Voice S3 系列的基礎型號，適合桌面擺件、語音助手原型與開發板使用。
+Standard Edition is the base model of the AiNow Voice S3 series, suitable for desktop assistants, voice assistant prototypes, and development boards.
 
-## 硬體規格
+## Hardware Specifications
 
-| 項目 | 規格 |
+| Item | Specification |
 | :--- | :--- |
-| **主控 MCU** | ESP32-S3-WROOM-1-N16R8 (8 MB Octal PSRAM) |
-| **麥克風** | 2× 數位 I2S MEMS (INMP441 / MSM261S)，透過 2.54mm 排母插座式安裝，中心間距 54 mm |
-| **顯示螢幕** | ST7789 1.54" SPI TFT (240×240)，1×8 排母插座 |
-| **音訊輸出** | MAX98357A I2S D 類功放，JST-PH-2P 揚聲器插座 |
-| **電源** | USB Type-C (5V)，TP4056 單節鋰電池充電，AP2112K 3.3V LDO |
-| **電池** | JST-PH-2P 3.7V 鋰聚合物電池插座 |
-| **按鍵** | RST (ESP_EN) / BOOT (PTT 喚醒) |
-| **狀態燈** | WS2812B RGB |
-| **PCB 尺寸** | 70 × 50 mm，圓角，四角 M3 固定孔 |
-| **層數** | 2 層 (F.Cu / B.Cu) + 雙層 GND 鋪銅 |
+| **Main MCU** | ESP32-S3-WROOM-1-N16R8 (8 MB Octal PSRAM) |
+| **Microphones** | 2× Digital I2S MEMS (INMP441 / MSM261S), socketed via 2.54mm pin headers, 54 mm center spacing |
+| **Display** | ST7789 1.54" SPI TFT (240×240), socketed via 1×8 pin header |
+| **Audio Output** | MAX98357A I2S Class-D amplifier, JST-PH-2P speaker connector |
+| **Power** | USB Type-C (5V), TP4056 single-cell Li-ion charger, AP2112K 3.3V LDO |
+| **Battery** | JST-PH-2P 3.7V Li-Po battery connector |
+| **Buttons** | RST (ESP_EN) / BOOT (PTT wake) |
+| **Status LED** | WS2812B RGB |
+| **PCB Size** | 70 × 50 mm, rounded corners, four M3 mounting holes |
+| **Layers** | 2 layers (F.Cu / B.Cu) + dual-layer GND pour |
 
-## 目錄結構
+## Folder Structure
 
 ```
 s3-dualmic-standard/
@@ -32,23 +32,23 @@ s3-dualmic-standard/
 │   ├── xiaozhi_s3_dualmic.kicad_pro
 │   ├── xiaozhi_s3_dualmic.kicad_sch
 │   └── xiaozhi_s3_dualmic.kicad_pcb
-├── gerber/           # 送板廠用 Gerber (匯出後放入)
-├── 3d/               # 額外 STEP 模型參考
+├── gerber/           # Gerber output for board house (export and place here)
+├── 3d/               # Additional STEP model references
 └── docs/
-    └── pinout.md     # ESP32-S3 GPIO 對照表
+    └── pinout.md     # ESP32-S3 GPIO mapping table
 ```
 
-## 快速開始
+## Quick Start
 
-1. 確認已安裝 **KiCad 10**。
-2. 開啟 `kicad/xiaozhi_s3_dualmic.kicad_pro`。
-3. 按下 `B` 重算鋪銅，按下 `Alt + 3` 檢視 3D 模型。
-4. 使用 KiCad 原生 **Push & Shove** (`X`) 依據飛線網表完成佈線。
-5. 匯出 Gerber 至 `gerber/` 後送製造。
+1. Make sure **KiCad 10** is installed.
+2. Open `kicad/xiaozhi_s3_dualmic.kicad_pro`.
+3. Press `B` to fill copper zones, press `Alt + 3` to view the 3D model.
+4. Use KiCad native **Push & Shove** (`X`) to complete routing following the ratsnest.
+5. Export Gerber to `gerber/` and send to the manufacturer.
 
-## GPIO 對照 (xiaozhi-esp32 相容)
+## GPIO Mapping (compatible with xiaozhi-esp32 firmware)
 
-| 功能 | ESP32-S3 GPIO |
+| Function | ESP32-S3 GPIO |
 | :--- | :--- |
 | I2S0 BCLK (Mic) | 41 |
 | I2S0 WS (Mic) | 42 |
