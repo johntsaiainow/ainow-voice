@@ -1,0 +1,16 @@
+*.bak
+*.bak1
+*.bak2
+*.kicad_sch.bak
+*.kicad_pcb.bak
+*.kicad_pro.bak
+*-save.kicad_sch
+*-save.kicad_pcb
+.vs/
+.DS_Thumbs
+Thumbs.db
+__pycache__/
+*.pyc
+
+# KiCad auto-backup
+.kicad_bak/

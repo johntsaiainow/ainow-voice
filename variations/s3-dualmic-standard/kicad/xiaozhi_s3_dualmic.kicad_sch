@@ -1,0 +1,554 @@
+(kicad_sch (version 20231120) (generator "eeschema") (generator_version "10.0") (uuid "a619c96a-0000-4000-8000-000000000001") (paper "A4")
+	(title_block
+		(title "XiaoZhi S3 Dual-Mic AI Assistant")
+		(date "11/2026")
+		(rev "1.0")
+		(company "AI-Now Inc.")
+	)
+(lib_symbols 
+
+(symbol "RF_Module:ESP32-S3-WROOM-1" (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "U" (at -12.7 26.67 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "ESP32-S3-WROOM-1" (at 12.7 26.67 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "RF_Module:ESP32-S3-WROOM-1" (at 0 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "ESP32?S3?WROOM?1*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "ESP32-S3-WROOM-1_0_0" 
+
+(rectangle (start -12.7 25.4) (end 12.7 -25.4) (stroke (width 0.254) (type default)) (fill (type background))) 
+
+(text "PSRAM" (at 5.08 2.54 900) (effects (font (size 1.27 1.27))))) 
+
+(symbol "ESP32-S3-WROOM-1_0_1" 
+
+(polyline (pts 
+
+(xy 7.62 -1.27) 
+
+(xy 6.35 -1.27) 
+
+(xy 6.35 6.35) 
+
+(xy 7.62 6.35)) (stroke (width 0) (type default)) (fill (type none)))) 
+
+(symbol "ESP32-S3-WROOM-1_1_1" (pin power_in line (at 0 -27.94 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 27.94 270) (length 2.54) (name "3V3" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -15.24 22.86 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 7.62 0) (length 2.54) (name "IO4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 5.08 0) (length 2.54) (name "IO5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 2.54 0) (length 2.54) (name "IO6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 0 0) (length 2.54) (name "IO7" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -20.32 0) (length 2.54) (name "IO15" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -22.86 0) (length 2.54) (name "IO16" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 17.78 180) (length 2.54) (name "IO17" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 15.24 180) (length 2.54) (name "IO18" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -2.54 0) (length 2.54) (name "IO8" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 12.7 180) (length 2.54) (name "USB_D-" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27)))) (alternate "IO19" bidirectional line)) (pin bidirectional line (at 15.24 10.16 180) (length 2.54) (name "USB_D+" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27)))) (alternate "IO20" bidirectional line)) (pin bidirectional line (at -15.24 10.16 0) (length 2.54) (name "IO3" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -17.78 180) (length 2.54) (name "IO46" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -5.08 0) (length 2.54) (name "IO9" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -7.62 0) (length 2.54) (name "IO10" (effects (font (size 1.27 1.27)))) (number "18" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -10.16 0) (length 2.54) (name "IO11" (effects (font (size 1.27 1.27)))) (number "19" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -12.7 0) (length 2.54) (name "IO12" (effects (font (size 1.27 1.27)))) (number "20" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -15.24 0) (length 2.54) (name "IO13" (effects (font (size 1.27 1.27)))) (number "21" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -17.78 0) (length 2.54) (name "IO14" (effects (font (size 1.27 1.27)))) (number "22" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 7.62 180) (length 2.54) (name "IO21" (effects (font (size 1.27 1.27)))) (number "23" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -20.32 180) (length 2.54) (name "IO47" (effects (font (size 1.27 1.27)))) (number "24" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -22.86 180) (length 2.54) (name "IO48" (effects (font (size 1.27 1.27)))) (number "25" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -15.24 180) (length 2.54) (name "IO45" (effects (font (size 1.27 1.27)))) (number "26" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 17.78 0) (length 2.54) (name "IO0" (effects (font (size 1.27 1.27)))) (number "27" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 5.08 180) (length 2.54) (name "IO35" (effects (font (size 1.27 1.27)))) (number "28" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 2.54 180) (length 2.54) (name "IO36" (effects (font (size 1.27 1.27)))) (number "29" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 0 180) (length 2.54) (name "IO37" (effects (font (size 1.27 1.27)))) (number "30" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -2.54 180) (length 2.54) (name "IO38" (effects (font (size 1.27 1.27)))) (number "31" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -5.08 180) (length 2.54) (name "IO39" (effects (font (size 1.27 1.27)))) (number "32" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -7.62 180) (length 2.54) (name "IO40" (effects (font (size 1.27 1.27)))) (number "33" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -10.16 180) (length 2.54) (name "IO41" (effects (font (size 1.27 1.27)))) (number "34" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -12.7 180) (length 2.54) (name "IO42" (effects (font (size 1.27 1.27)))) (number "35" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 20.32 180) (length 2.54) (name "RXD0" (effects (font (size 1.27 1.27)))) (number "36" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 22.86 180) (length 2.54) (name "TXD0" (effects (font (size 1.27 1.27)))) (number "37" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 12.7 0) (length 2.54) (name "IO2" (effects (font (size 1.27 1.27)))) (number "38" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 15.24 0) (length 2.54) (name "IO1" (effects (font (size 1.27 1.27)))) (number "39" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -27.94 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 1.27 1.27)))) (number "40" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -27.94 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 1.27 1.27)))) (number "41" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
+
+(symbol "Audio:MAX98357A" (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "U" (at -8.89 11.43 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "MAX98357A" (at 10.16 11.43 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "Package_DFN_QFN:TQFN-16-1EP_3x3mm_P0.5mm_EP1.23x1.23mm" (at -1.27 -2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf" (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "Mono DAC with amplifier, I2S, PCM, TDM, 32-bit, 96khz, 3.2W, TQFP-16" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "pcm tdm i2s left-justified amplifier audio dac" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "TQFN*3x3mm*P0.5mm*EP1.23x1.23mm*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "MAX98357A_1_1" 
+
+(rectangle (start -10.16 10.16) (end 10.16 -10.16) (stroke (width 0.254) (type default)) (fill (type background))) (pin input line (at -12.7 7.62 0) (length 2.54) (name "DIN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -12.7 -5.08 0) (length 2.54) (name "GAIN_SLOT" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 -2.54 0) (length 2.54) (name "~{SD_MODE}" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 10.16 2.54 180) (length 2.54) (hide yes) (name "NC" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 10.16 0 180) (length 2.54) (hide yes) (name "NC" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "VDD" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 12.7 270) (length 2.54) (hide yes) (name "VDD" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 7.62 180) (length 2.54) (name "OUTP" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 5.08 180) (length 2.54) (name "OUTN" (effects (font (size 1.27 1.27)))) (number "10" (effects (font (size 1.27 1.27))))) (pin passive line (at -2.54 -12.7 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 1.27 1.27)))) (number "11" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 10.16 -5.08 180) (length 2.54) (hide yes) (name "NC" (effects (font (size 1.27 1.27)))) (number "12" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 10.16 -7.62 180) (length 2.54) (hide yes) (name "NC" (effects (font (size 1.27 1.27)))) (number "13" (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 2.54 0) (length 2.54) (name "LRCLK" (effects (font (size 1.27 1.27)))) (number "14" (effects (font (size 1.27 1.27))))) (pin passive line (at -2.54 -12.7 90) (length 2.54) (hide yes) (name "GND" (effects (font (size 1.27 1.27)))) (number "15" (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 5.08 0) (length 2.54) (name "BCLK" (effects (font (size 1.27 1.27)))) (number "16" (effects (font (size 1.27 1.27))))) (pin unspecified line (at 2.54 -12.7 90) (length 2.54) (name "PAD" (effects (font (size 1.27 1.27)))) (number "17" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
+
+(symbol "Battery_Management:TP4056-42-ESOP8" (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "U" (at -6.604 11.684 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "TP4056-42-ESOP8" (at 10.16 11.684 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias" (at 0.508 -22.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf" (at 0 -25.4 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)" (at 0.508 -20.32 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "lithium-ion lithium-polymer Li-Poly" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "*SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "TP4056-42-ESOP8_1_0" (pin input line (at 10.16 0 180) (length 2.54) (name "TEMP" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 10.16 -2.54 180) (length 2.54) (name "PROG" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name "V_{CC}" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin power_out line (at 10.16 5.08 180) (length 2.54) (name "BAT" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin open_collector line (at -10.16 -2.54 0) (length 2.54) (name "~{STDBY}" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin open_collector line (at -10.16 0 0) (length 2.54) (name "~{CHRG}" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name "CE" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) (pin passive line (at -2.54 -12.7 90) (length 2.54) (name "EPAD" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))) 
+
+(symbol "TP4056-42-ESOP8_1_1" 
+
+(rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (embedded_fonts no)) 
+
+(symbol "Regulator_Linear:AP2112K-3.3" (pin_names (offset 0.254)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (embedded_fonts no) 
+
+(property "Reference" "U" (at -5.08 5.715 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "AP2112K-3.3" (at 0 5.715 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 0 8.255 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf" (at 0 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "linear regulator ldo fixed positive" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "SOT?23?5*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "AP2112K-3.3_0_1" 
+
+(rectangle (start -5.08 4.445) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background)))) 
+
+(symbol "AP2112K-3.3_1_1" (pin power_in line (at -7.62 2.54 0) (length 2.54) (name "VIN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -7.62 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 0 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 5.08 0 180) (length 2.54) (hide yes) (name "NC" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin power_out line (at 7.62 2.54 180) (length 2.54) (name "VOUT" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))))) 
+
+(symbol "Connector:USB_C_Receptacle_USB2.0_16P" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "J" (at 0 22.225 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "USB_C_Receptacle_USB2.0_16P" (at 0 19.685 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "" (at 3.81 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 3.81 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "USB 2.0-only 16P Type-C Receptacle connector" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "usb universal serial bus type-C USB2.0" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "USB*C*Receptacle*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "USB_C_Receptacle_USB2.0_16P_0_0" 
+
+(rectangle (start -0.254 -17.78) (end 0.254 -16.764) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 15.494) (end 9.144 14.986) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 10.414) (end 9.144 9.906) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 7.874) (end 9.144 7.366) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 2.794) (end 9.144 2.286) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 0.254) (end 9.144 -0.254) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 -2.286) (end 9.144 -2.794) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 -4.826) (end 9.144 -5.334) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 -12.446) (end 9.144 -12.954) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 10.16 -14.986) (end 9.144 -15.494) (stroke (width 0) (type default)) (fill (type none)))) 
+
+(symbol "USB_C_Receptacle_USB2.0_16P_0_1" 
+
+(rectangle (start -10.16 17.78) (end 10.16 -17.78) (stroke (width 0.254) (type default)) (fill (type background))) 
+
+(polyline (pts 
+
+(xy -8.89 -3.81) 
+
+(xy -8.89 3.81)) (stroke (width 0.508) (type default)) (fill (type none))) 
+
+(rectangle (start -7.62 -3.81) (end -6.35 3.81) (stroke (width 0.254) (type default)) (fill (type outline))) (arc (start -7.62 3.81) (mid -6.985 4.4423) (end -6.35 3.81) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start -7.62 3.81) (mid -6.985 4.4423) (end -6.35 3.81) (stroke (width 0.254) (type default)) (fill (type outline))) (arc (start -8.89 3.81) (mid -6.985 5.7067) (end -5.08 3.81) (stroke (width 0.508) (type default)) (fill (type none))) (arc (start -5.08 -3.81) (mid -6.985 -5.7067) (end -8.89 -3.81) (stroke (width 0.508) (type default)) (fill (type none))) (arc (start -6.35 -3.81) (mid -6.985 -4.4423) (end -7.62 -3.81) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start -6.35 -3.81) (mid -6.985 -4.4423) (end -7.62 -3.81) (stroke (width 0.254) (type default)) (fill (type outline))) 
+
+(polyline (pts 
+
+(xy -5.08 3.81) 
+
+(xy -5.08 -3.81)) (stroke (width 0.508) (type default)) (fill (type none))) (circle (center -2.54 1.143) (radius 0.635) (stroke (width 0.254) (type default)) (fill (type outline))) 
+
+(polyline (pts 
+
+(xy -1.27 4.318) 
+
+(xy 0 6.858) 
+
+(xy 1.27 4.318) 
+
+(xy -1.27 4.318)) (stroke (width 0.254) (type default)) (fill (type outline))) 
+
+(polyline (pts 
+
+(xy 0 -2.032) 
+
+(xy 2.54 0.508) 
+
+(xy 2.54 1.778)) (stroke (width 0.508) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 0 -3.302) 
+
+(xy -2.54 -0.762) 
+
+(xy -2.54 0.508)) (stroke (width 0.508) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 0 -5.842) 
+
+(xy 0 4.318)) (stroke (width 0.508) (type default)) (fill (type none))) (circle (center 0 -5.842) (radius 1.27) (stroke (width 0) (type default)) (fill (type outline))) 
+
+(rectangle (start 1.905 1.778) (end 3.175 3.048) (stroke (width 0.254) (type default)) (fill (type outline)))) 
+
+(symbol "USB_C_Receptacle_USB2.0_16P_1_1" (pin passive line (at 0 -22.86 90) (length 5.08) (name "GND" (effects (font (size 1.27 1.27)))) (number "A1" (effects (font (size 1.27 1.27))))) (pin passive line (at 15.24 15.24 180) (length 5.08) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "A4" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 10.16 180) (length 5.08) (name "CC1" (effects (font (size 1.27 1.27)))) (number "A5" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -2.54 180) (length 5.08) (name "D+" (effects (font (size 1.27 1.27)))) (number "A6" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 2.54 180) (length 5.08) (name "D-" (effects (font (size 1.27 1.27)))) (number "A7" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -12.7 180) (length 5.08) (name "SBU1" (effects (font (size 1.27 1.27)))) (number "A8" (effects (font (size 1.27 1.27))))) (pin passive line (at 15.24 15.24 180) (length 5.08) (hide yes) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "A9" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -22.86 90) (length 5.08) (hide yes) (name "GND" (effects (font (size 1.27 1.27)))) (number "A12" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -22.86 90) (length 5.08) (hide yes) (name "GND" (effects (font (size 1.27 1.27)))) (number "B1" (effects (font (size 1.27 1.27))))) (pin passive line (at 15.24 15.24 180) (length 5.08) (hide yes) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "B4" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 7.62 180) (length 5.08) (name "CC2" (effects (font (size 1.27 1.27)))) (number "B5" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -5.08 180) (length 5.08) (name "D+" (effects (font (size 1.27 1.27)))) (number "B6" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 0 180) (length 5.08) (name "D-" (effects (font (size 1.27 1.27)))) (number "B7" (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -15.24 180) (length 5.08) (name "SBU2" (effects (font (size 1.27 1.27)))) (number "B8" (effects (font (size 1.27 1.27))))) (pin passive line (at 15.24 15.24 180) (length 5.08) (hide yes) (name "VBUS" (effects (font (size 1.27 1.27)))) (number "B9" (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -22.86 90) (length 5.08) (hide yes) (name "GND" (effects (font (size 1.27 1.27)))) (number "B12" (effects (font (size 1.27 1.27))))) (pin passive line (at -7.62 -22.86 90) (length 5.08) (name "SHIELD" (effects (font (size 1.27 1.27)))) (number "SH" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
+
+(symbol "Connector_Generic:Conn_01x06" (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "J" (at 0 7.62 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "Conn_01x06" (at 0 -10.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "connector" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "Conn_01x06_1_1" 
+
+(rectangle (start -1.27 6.35) (end 1.27 -8.89) (stroke (width 0.254) (type default)) (fill (type background))) 
+
+(rectangle (start -1.27 5.207) (end 0 4.953) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 2.667) (end 0 2.413) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 0.127) (end 0 -0.127) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 -2.413) (end 0 -2.667) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 -4.953) (end 0 -5.207) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 -7.493) (end 0 -7.747) (stroke (width 0.1524) (type default)) (fill (type none))) (pin passive line (at -5.08 5.08 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 0) (length 3.81) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -7.62 0) (length 3.81) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
+
+(symbol "Connector_Generic:Conn_01x08" (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "J" (at 0 10.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "Conn_01x08" (at 0 -12.7 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "connector" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "Conn_01x08_1_1" 
+
+(rectangle (start -1.27 8.89) (end 1.27 -11.43) (stroke (width 0.254) (type default)) (fill (type background))) 
+
+(rectangle (start -1.27 7.747) (end 0 7.493) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 5.207) (end 0 4.953) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 2.667) (end 0 2.413) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 0.127) (end 0 -0.127) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 -2.413) (end 0 -2.667) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 -4.953) (end 0 -5.207) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 -7.493) (end 0 -7.747) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 -10.033) (end 0 -10.287) (stroke (width 0.1524) (type default)) (fill (type none))) (pin passive line (at -5.08 7.62 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 5.08 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 0) (length 3.81) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -7.62 0) (length 3.81) (name "Pin_7" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -10.16 0) (length 3.81) (name "Pin_8" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
+
+(symbol "Connector_Generic:Conn_01x02" (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "J" (at 0 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Value" "Conn_01x02" (at 0 -5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "connector" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "Conn_01x02_1_1" 
+
+(rectangle (start -1.27 1.27) (end 1.27 -3.81) (stroke (width 0.254) (type default)) (fill (type background))) 
+
+(rectangle (start -1.27 0.127) (end 0 -0.127) (stroke (width 0.1524) (type default)) (fill (type none))) 
+
+(rectangle (start -1.27 -2.413) (end 0 -2.667) (stroke (width 0.1524) (type default)) (fill (type none))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
+
+(symbol "LED:WS2812B" (pin_names (offset 0.254)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "D" (at 5.08 5.715 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right bottom))) 
+
+(property "Value" "WS2812B" (at 1.27 -5.715 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left top))) 
+
+(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 1.27 -7.62 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left top))) 
+
+(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" (at 2.54 -9.525 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left top))) 
+
+(property "Description" "RGB LED with integrated controller" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "RGB LED NeoPixel addressable" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "WS2812B_0_0" 
+
+(text "RGB" (at 2.286 -4.191 0) (effects (font (size 0.762 0.762))))) 
+
+(symbol "WS2812B_0_1" 
+
+(polyline (pts 
+
+(xy 1.27 -2.54) 
+
+(xy 1.778 -2.54)) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 1.27 -3.556) 
+
+(xy 1.778 -3.556)) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 2.286 -1.524) 
+
+(xy 1.27 -2.54) 
+
+(xy 1.27 -2.032)) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 2.286 -2.54) 
+
+(xy 1.27 -3.556) 
+
+(xy 1.27 -3.048)) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 3.683 -1.016) 
+
+(xy 3.683 -3.556) 
+
+(xy 3.683 -4.064)) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 4.699 -1.524) 
+
+(xy 2.667 -1.524) 
+
+(xy 3.683 -3.556) 
+
+(xy 4.699 -1.524)) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 4.699 -3.556) 
+
+(xy 2.667 -3.556)) (stroke (width 0) (type default)) (fill (type none))) 
+
+(rectangle (start 5.08 5.08) (end -5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background)))) 
+
+(symbol "WS2812B_1_1" (pin power_in line (at 0 7.62 270) (length 2.54) (name "VDD" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 0 180) (length 2.54) (name "DOUT" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -7.62 90) (length 2.54) (name "VSS" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 0 0) (length 2.54) (name "DIN" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))) (embedded_fonts no)) 
+
+(symbol "Switch:SW_Push" (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) 
+
+(property "Reference" "SW" (at 1.27 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "SW_Push" (at 0 -1.524 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) 
+
+(property "Footprint" "" (at 0 5.08 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Datasheet" "" (at 0 5.08 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "Description" "Push button switch, generic, two pins" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) 
+
+(symbol "SW_Push_0_1" (circle (center -2.032 0) (radius 0.508) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 0 1.27) 
+
+(xy 0 3.048)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 2.032 0) (radius 0.508) (stroke (width 0) (type default)) (fill (type none))) 
+
+(polyline (pts 
+
+(xy 2.54 1.27) 
+
+(xy -2.54 1.27)) (stroke (width 0) (type default)) (fill (type none))) (pin passive line (at -5.08 0 0) (length 2.54) (name "1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at 5.08 0 180) (length 2.54) (name "2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))) 
+
+(symbol (lib_id "RF_Module:ESP32-S3-WROOM-1") (at 149.86 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "f2577504-1bce-4fb8-8e29-146654db1c9e") 
+
+(property "Reference" "U1" (at 152.4 99.06 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "ESP32-S3-WROOM-1" (at 152.4 101.6 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "RF_Module:ESP32-S3-WROOM-1" (at 149.86 102.87 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf" (at 149.86 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD" (at 149.86 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "8c4d2497-aa96-4c0e-aa8a-78be7009c692")) (pin "2" (uuid "034eedd5-3c5c-4b65-900e-8801cff8d338")) (pin "3" (uuid "ad6be653-ff97-4489-973a-c1f8099f4217")) (pin "4" (uuid "25dc660b-498b-4bab-8e7f-da1467ea62b4")) (pin "5" (uuid "83a6b6a9-5d5f-4d65-be2a-f2df0cfcb059")) (pin "6" (uuid "e3cd636a-fd16-4461-a7ee-d18e3064fa4c")) (pin "7" (uuid "e95886e9-0b59-4a5a-bc4a-027a0d9e96ed")) (pin "8" (uuid "494ebab8-3234-44a5-8564-610b56c7e219")) (pin "9" (uuid "11fbb290-11ef-48a1-a077-d0fe4a56111b")) (pin "10" (uuid "606e65fa-d404-4c64-9753-5feaf6cb903a")) (pin "11" (uuid "d1cb146b-f41f-4fad-a466-7e91d8635402")) (pin "12" (uuid "28e8360b-760c-4dd9-883a-d96b2a16e4f1")) (pin "13" (uuid "76c17542-09ac-49a9-ae03-dafd678226a1")) (pin "14" (uuid "c800901c-7001-4a48-8a42-016f0224ab7b")) (pin "15" (uuid "c86c0ea4-d962-48f1-b81a-5b54b09ccb2e")) (pin "16" (uuid "5bbe3a22-feb6-400a-b08a-81a61af502e4")) (pin "17" (uuid "0cf38fcc-af7b-43ce-99eb-0bf1155d3f4f")) (pin "18" (uuid "fce36754-d12d-4c91-85a3-65b3de07ab78")) (pin "19" (uuid "43477e8d-500a-48ea-8c68-96b6481d6fe1")) (pin "20" (uuid "be492631-126f-4690-bc00-7bfae1f47ccd")) (pin "21" (uuid "5bf0376d-5bdb-4111-ab69-56775a6b37f9")) (pin "22" (uuid "548241cf-b767-4af7-95e6-a3768ae6fc29")) (pin "23" (uuid "b763b396-0fb2-4060-9c0e-9b9776c2d5a8")) (pin "24" (uuid "900dd4ae-1069-4d47-98ac-543ab61fbbc5")) (pin "25" (uuid "3431e61b-6740-445d-9e18-4877cadf13f4")) (pin "26" (uuid "dbbf1a99-ed84-418a-94ad-96f1e9e319dc")) (pin "27" (uuid "3a80db79-d8db-4b0b-a0a7-c824f54781dd")) (pin "28" (uuid "46457551-7941-481a-a99a-bb980074b8ac")) (pin "29" (uuid "f5272f26-3473-4550-b1b4-1796a5614da0")) (pin "30" (uuid "fceaa986-3c0d-40d1-8bc6-c67385557d0d")) (pin "31" (uuid "058b7713-071b-4f80-b6a5-b13d9d502833")) (pin "32" (uuid "0362392a-007f-4262-b79d-f2a9e1b80d48")) (pin "33" (uuid "cedf2d86-6940-4264-a1a2-0283e5fd58da")) (pin "34" (uuid "a1adc0b7-af62-4ebf-873b-befd4c1ce1a0")) (pin "35" (uuid "4fe7f8e7-7770-4816-bf9c-8cf8b6bebf67")) (pin "36" (uuid "41c013f1-df0b-4505-97b7-83f96316bfdf")) (pin "37" (uuid "d11146eb-01d2-4027-8cd2-5b12e1ffd949")) (pin "38" (uuid "89ad7015-8d9d-4054-a117-410625189da8")) (pin "39" (uuid "93492aed-e435-4e4f-9994-dc1d1c8a49a8")) (pin "40" (uuid "08175bcd-acb4-4178-9ca7-5d5983fc2717")) (pin "41" (uuid "ab2eab4d-6355-4226-a48d-9ebfca565dcf")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "U1") (unit 1))))) 
+
+(symbol (lib_id "Audio:MAX98357A") (at 219.71 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "604a791c-8813-4389-9afd-e1a9c7656daf") 
+
+(property "Reference" "U2" (at 222.25 99.06 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "MAX98357A" (at 222.25 101.6 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" (at 218.44 97.78999999999999 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX98357A-MAX98357B.pdf" (at 219.71 97.78999999999999 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Mono DAC with amplifier, I2S, PCM, TDM, 32-bit, 96khz, 3.2W, TQFP-16" (at 219.71 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "331bd581-84ff-4345-91e4-6dc79fb32c6f")) (pin "2" (uuid "055ef1a0-20b5-45d0-9989-c223979f393c")) (pin "3" (uuid "82ab80d4-d621-4032-83fc-dcb7a1b65200")) (pin "4" (uuid "dd6206f4-8487-4db0-beda-3fc52f992af4")) (pin "5" (uuid "2a0c6785-8b1b-4562-a352-9c81069f0054")) (pin "6" (uuid "8ee4985a-5447-4bf1-bc50-d48cfdb8a328")) (pin "7" (uuid "b3f975f3-be96-4095-b1d6-112dbb1065c2")) (pin "8" (uuid "02fd0ec5-810c-4691-a9b1-e82f36842e6f")) (pin "9" (uuid "a792a045-6827-4a94-8f1a-1823517fd227")) (pin "10" (uuid "a910e002-419e-46b1-be67-3fb88ab23dfa")) (pin "11" (uuid "d651d0d2-f433-4890-9582-7892ad3d1a99")) (pin "12" (uuid "868c398c-28e0-44d9-aacd-d4872468079b")) (pin "13" (uuid "3134dadd-5dd3-4e47-9f6a-36d619a9689e")) (pin "14" (uuid "bf36e1ee-5506-4826-9edc-ec426a1a0312")) (pin "15" (uuid "9fff8fe1-ae01-40b9-8352-9ffdd3fc9eee")) (pin "16" (uuid "e66028f6-1f2b-47c7-b9eb-9ab2ec5475e7")) (pin "17" (uuid "f2f95de7-d52a-4dee-8c61-a7775009ccdc")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "U2") (unit 1))))) 
+
+(symbol (lib_id "Battery_Management:TP4056-42-ESOP8") (at 49.53 49.53 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "4ea5d015-d381-430e-b374-a04783d366a3") 
+
+(property "Reference" "U3" (at 52.07 48.26 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "TP4056-42-ESOP8" (at 52.07 50.800000000000004 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" (at 50.038000000000004 26.67 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf" (at 49.53 24.130000000000003 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)" (at 50.038000000000004 29.21 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "ffd8eb4b-1932-4a60-9b04-4049c63c08b7")) (pin "2" (uuid "d84ab96d-c4bf-40d2-a2cc-e22a26e29ea0")) (pin "3" (uuid "b3379229-fff4-45be-b912-90e2b125105e")) (pin "4" (uuid "f3511cf5-4192-4b22-9986-bd2c7fed68a5")) (pin "5" (uuid "860367a6-fe96-4c17-9791-e2a278ed5486")) (pin "6" (uuid "053f3a56-f170-46d1-b397-8f81edd36152")) (pin "7" (uuid "00332846-5508-4304-bc2a-7fc1f0f7ff3d")) (pin "8" (uuid "6e0f6050-89ea-447e-8a14-112a8d162053")) (pin "9" (uuid "c8aea035-452a-425e-99ab-d33f68741519")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "U3") (unit 1))))) 
+
+(symbol (lib_id "Regulator_Linear:AP2112K-3.3") (at 49.53 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "c98c8c6d-9111-4da0-938f-4bb0155d0fa2") 
+
+(property "Reference" "U4" (at 52.07 99.06 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "AP2112K-3.3" (at 52.07 101.6 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 49.53 108.585 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf" (at 49.53 102.87 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5" (at 49.53 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "9b33518a-2d71-4764-8172-52b92e6457b7")) (pin "2" (uuid "d901af79-0fea-424a-9710-90e67434d7d1")) (pin "3" (uuid "d993127c-6356-4936-b55d-d0f74c82ba4c")) (pin "4" (uuid "2ee78a71-0144-43fb-baa5-04aaa5201870")) (pin "5" (uuid "b2efc889-c558-4945-9da0-8bec82e4f859")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "U4") (unit 1))))) 
+
+(symbol (lib_id "Connector:USB_C_Receptacle_USB2.0_16P") (at 49.53 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "599b18ec-95ef-43dc-9bd3-2639c99859f0") 
+
+(property "Reference" "J1" (at 52.07 148.59 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "USB_C_Receptacle_USB2.0_16P" (at 52.07 151.13000000000002 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" (at 53.34 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (at 53.34 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "USB 2.0-only 16P Type-C Receptacle connector" (at 49.53 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "A1" (uuid "d522b9d4-41c8-477a-adee-f27e8dfd7e89")) (pin "A4" (uuid "d1a7952a-9610-49ac-af4b-2df66f3dc052")) (pin "A5" (uuid "e9551a28-f70a-44c7-bee5-ff80f9b71405")) (pin "A6" (uuid "22cd2893-98a2-4f4f-a505-67c71d2e3b3f")) (pin "A7" (uuid "6736b72e-df05-4a33-83b1-35078e1134e7")) (pin "A8" (uuid "ff73f8d5-7ec9-41d4-ac6f-7e363f9763eb")) (pin "A9" (uuid "4955ff95-1fcc-4510-9114-b478a4450c39")) (pin "A12" (uuid "a092f0f8-df57-4baf-8204-e36fecd0f5b0")) (pin "B1" (uuid "79e66bca-308c-4cde-835b-f62fbfaaf2e3")) (pin "B4" (uuid "24f6b81c-55c1-478a-8367-f8289ec000d2")) (pin "B5" (uuid "03c04b9d-89b8-4587-a678-3113df1ce71e")) (pin "B6" (uuid "778960dc-17bb-465d-b756-e57a4344908f")) (pin "B7" (uuid "ea25ed16-1dc7-43af-a32e-c243a6e06136")) (pin "B8" (uuid "d54192a6-06ad-4ee3-92cc-df12a0495a45")) (pin "B9" (uuid "883aaffd-e27f-4fdd-9e79-98e5707c4e6a")) (pin "B12" (uuid "d341443d-3816-4e0e-8654-babd09327148")) (pin "SH" (uuid "6f6cea52-9278-4db1-ade0-001a402fba16")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "J1") (unit 1))))) 
+
+(symbol (lib_id "Connector_Generic:Conn_01x06") (at 100.33 39.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "9cf12c8f-ce13-488f-abd1-eed194ad2606") 
+
+(property "Reference" "J2" (at 102.87 38.099999999999994 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "Conn_01x06" (at 102.87 40.64 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" (at 100.33 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 100.33 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 100.33 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "91ef1518-fcac-49e7-9745-14947bb83121")) (pin "2" (uuid "053c25a7-76ee-4bec-9c3a-093b35ad3b8b")) (pin "3" (uuid "b1769c17-4a96-4afb-ab43-a964137d0760")) (pin "4" (uuid "10db50e8-65ab-4d1f-bd7e-fd1c29701232")) (pin "5" (uuid "7e9ad6db-f40e-468d-b9ca-f5a4b33878ea")) (pin "6" (uuid "7b5b58a5-d7aa-4106-b133-b2384632f59c")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "J2") (unit 1))))) 
+
+(symbol (lib_id "Connector_Generic:Conn_01x06") (at 149.86 39.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "c4d6e926-5214-4b26-b8d3-5755fcff51d2") 
+
+(property "Reference" "J3" (at 152.4 38.099999999999994 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "Conn_01x06" (at 152.4 40.64 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" (at 149.86 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 149.86 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 149.86 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "894deab0-783f-4f4b-8847-159f84b185a3")) (pin "2" (uuid "b10f59b9-e94f-450c-9720-12f8db55b31e")) (pin "3" (uuid "3c6d7aff-b236-4282-a975-cb14fa5800de")) (pin "4" (uuid "c44fcdbb-cae4-4fab-8ada-a18795c1ea16")) (pin "5" (uuid "a97bdb46-5690-42e2-aa52-74315b41c6ab")) (pin "6" (uuid "3911127a-4b99-48dc-bbec-cac1ac5bf73a")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "J3") (unit 1))))) 
+
+(symbol (lib_id "Connector_Generic:Conn_01x08") (at 199.39000000000001 39.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "5415b7a3-7b3d-4361-93de-a8d4a4f707b7") 
+
+(property "Reference" "J4" (at 201.93 38.099999999999994 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "Conn_01x08" (at 201.93 40.64 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" (at 199.39000000000001 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 199.39000000000001 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 199.39000000000001 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "f0d9c3b3-9bae-401f-a36e-82a8d0b8b724")) (pin "2" (uuid "6fda0be0-fb4b-474c-a785-62ce11e99a6d")) (pin "3" (uuid "a081b6ed-dea7-4ec4-a248-621eca3ef6a4")) (pin "4" (uuid "cfee33ab-5f76-48e3-8381-11a02e3e06a9")) (pin "5" (uuid "a56ecf86-a180-43bf-b5d6-b2bcabcdc31a")) (pin "6" (uuid "9814cd18-c000-487f-b746-ad10595f1dea")) (pin "7" (uuid "065062a7-3302-4d30-b206-ccacf300f06c")) (pin "8" (uuid "efc603f3-53cf-404f-81c6-ec47a535e00f")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "J4") (unit 1))))) 
+
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 250.19 39.37 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "cdd92e79-1421-419f-8d2f-c04a59327077") 
+
+(property "Reference" "J5" (at 252.73 38.099999999999994 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "Conn_01x02" (at 252.73 40.64 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" (at 250.19 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 250.19 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 250.19 39.37 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "198681b5-7369-46ca-954d-072910944915")) (pin "2" (uuid "e3769e6f-599e-44ef-b9ca-325a5ea6048c")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "J5") (unit 1))))) 
+
+(symbol (lib_id "Connector_Generic:Conn_01x02") (at 250.19 59.69 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "2b216095-cf2c-4bf9-b4b7-d4e6dee1453c") 
+
+(property "Reference" "J6" (at 252.73 58.419999999999995 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "Conn_01x02" (at 252.73 60.96 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" (at 250.19 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 250.19 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 250.19 59.69 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "5be38f39-c599-4e46-98b4-e6504fdc1d8a")) (pin "2" (uuid "7d305c4c-cd27-4ef1-aa16-1b88e22e11e1")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "J6") (unit 1))))) 
+
+(symbol (lib_id "LED:WS2812B") (at 219.71 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "140742f9-a90d-4177-a929-f041e1ec54d8") 
+
+(property "Reference" "D1" (at 222.25 148.59 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "WS2812B" (at 222.25 151.13000000000002 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" (at 220.98000000000002 142.24 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" (at 222.25 140.335 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "RGB LED with integrated controller" (at 219.71 149.86 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "b2193edb-839c-4c8c-a421-d1453900bb15")) (pin "2" (uuid "caa676ef-e5c4-420d-ac0d-d5cff0d62993")) (pin "3" (uuid "ee9b2b64-a86f-4b0a-a779-cb161f3c6e31")) (pin "4" (uuid "999095c7-5581-4e31-aa0d-35a1cab24c42")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "D1") (unit 1))))) 
+
+(symbol (lib_id "Switch:SW_Push") (at 100.33 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "d959ac53-3526-4413-8565-592ee011e1de") 
+
+(property "Reference" "SW1" (at 102.87 99.06 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "SW_Push" (at 102.87 101.6 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645" (at 100.33 105.41 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 100.33 105.41 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Push button switch, generic, two pins" (at 100.33 100.33 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "e74803d6-49e7-4c65-bc76-48bd9ce54c71")) (pin "2" (uuid "25b1fe3f-26b1-4924-89e5-035a988c31b0")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "SW1") (unit 1))))) 
+
+(symbol (lib_id "Switch:SW_Push") (at 100.33 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced yes) (uuid "687447c7-28a1-415f-a82c-77f4744982df") 
+
+(property "Reference" "SW2" (at 102.87 118.11 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Value" "SW_Push" (at 102.87 120.64999999999999 0) (effects (font (size 1.27 1.27)) (justify left))) 
+
+(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645" (at 100.33 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Datasheet" "" (at 100.33 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))) 
+
+(property "Description" "Push button switch, generic, two pins" (at 100.33 119.38 0) (effects (font (size 1.27 1.27)) (hide yes))) (pin "1" (uuid "8ac12bcd-c383-4a0d-843e-5ba114003fda")) (pin "2" (uuid "31faa49c-8c39-4844-85a7-53a4e0a155e6")) (instances (project "xiaozhi_s3_dualmic" (path "/a619c96a-0000-4000-8000-000000000001" (reference "SW2") (unit 1))))))
