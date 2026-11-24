@@ -2343,6 +2343,13 @@
 			(justify mirror)
 		)
 	)
+	(segment (start 134.75 146.5) (end 130.0 146.5) (width 0.25) (layer "F.Cu") (net "USB_D+"))
+	(segment (start 130.0 146.5) (end 127.0 143.5) (width 0.25) (layer "F.Cu") (net "USB_D+"))
+	(segment (start 127.0 143.5) (end 126.25 142.25) (width 0.25) (layer "F.Cu") (net "USB_D+"))
+	(segment (start 135.25 146.5) (end 131.0 146.5) (width 0.25) (layer "F.Cu") (net "USB_D-"))
+	(segment (start 131.0 146.5) (end 128.0 143.5) (width 0.25) (layer "F.Cu") (net "USB_D-"))
+	(segment (start 128.0 143.5) (end 126.25 140.98) (width 0.25) (layer "F.Cu") (net "USB_D-"))
+
 	(zone
 		(net "GND")
 		(layer "F.Cu")
