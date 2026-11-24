@@ -1105,7 +1105,7 @@
 	(footprint "Connector_USB:USB_C_Receptacle_GCT_USB4085"
 		(layer "F.Cu")
 		(uuid "f0000001-0000-0000-0000-000000000006")
-		(at 115 146.5)
+		(at 135 146.5)
 		(property "Reference" "J1"
 			(at 0 -4.5 0)
 			(layer "F.SilkS")
@@ -2220,7 +2220,7 @@
 		)
 	)
 	(gr_text "USB Type-C"
-		(at 115 141 0)
+		(at 135 141 0)
 		(layer "F.SilkS")
 		(uuid "3e914a20-20ac-44f7-9d69-d91908835340")
 		(effects
